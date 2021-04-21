@@ -1,6 +1,6 @@
 {
   "name": "ngx-jixie-analytics",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Agung Yuliyanto",
     "email": "agung.96tm@gmail.com",
@@ -20,10 +20,10 @@
   ],
   "peerDependencies": {
     "@angular/common": "^11.0.9",
-    "@angular/core": "^11.0.9",
-    "ts-md5": "^1.2.7"
+    "@angular/core": "^11.0.9"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.0.0",
+    "ts-md5": "^1.2.7"
   }
 }
