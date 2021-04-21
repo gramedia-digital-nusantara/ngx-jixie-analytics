@@ -1,0 +1,29 @@
+{
+  "name": "ngx-jixie-analytics",
+  "version": "0.0.1",
+  "author": {
+    "name": "Agung Yuliyanto",
+    "email": "agung.96tm@gmail.com",
+    "url": "https://agung96tm.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agung96tm/ngx-jixie-analytics.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "jixie",
+    "jixie analytic"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^11.0.9",
+    "@angular/core": "^11.0.9",
+    "ts-md5": "^1.2.7"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

@@ -1,6 +1,23 @@
 {
   "name": "ngx-jixie-analytics",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": {
+    "name": "Agung Yuliyanto",
+    "email": "agung.96tm@gmail.com",
+    "url": "https://agung96tm.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agung96tm/ngx-jixie-analytics.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "jixie",
+    "jixie analytic"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +25,6 @@
     "test": "ng test",
     "lint": "ng lint"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~11.0.3",
     "@angular/common": "~11.0.3",
@@ -19,10 +35,12 @@
     "@angular/platform-browser-dynamic": "~11.0.3",
     "@angular/router": "~11.0.3",
     "rxjs": "~6.6.0",
+    "ts-md5": "^1.2.7",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1100.7",
     "@angular/cli": "~11.0.3",
     "@angular/compiler-cli": "~11.0.3",
     "@types/jasmine": "~3.6.0",
@@ -35,6 +53,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^11.0.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
