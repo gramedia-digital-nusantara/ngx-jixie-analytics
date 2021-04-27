@@ -61,7 +61,6 @@ export class JixieAnalyticService {
       const doc = this.browserGlobals.documentRef();
 
       const jixieScript = doc.createElement('script');
-      jixieScript.id = 'GTMscript';
       jixieScript.async = true;
       jixieScript.src = this.applyQueryParams(
         'https://scripts.jixie.io/jixietracker.js',
@@ -108,7 +107,7 @@ export class JixieAnalyticService {
       url +
       Object.keys(this.config)
         .filter((k) => this.config[k])
-        .map((k) => `${k}=${this.config[k]}`)
+        .map((k) => `${k.toLowerCase()}=${this.config[k]}`)
         .join('&')
     );
   }
