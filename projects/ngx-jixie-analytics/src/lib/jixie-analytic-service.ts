@@ -25,19 +25,19 @@ export class JixieAnalyticService {
   constructor(
     @Optional()
     @Inject('jixieConfig')
-    public config: IJixieConfig = { accountId: null },
+    public config: IJixieConfig = { accountid: null },
     @Optional() @Inject('jixieAccountId') public jixieAccountId: string,
   ) {
     if (this.config == null) {
-      this.config = { accountId: null };
+      this.config = { accountid: null };
     }
 
     this.config = {
       ...this.config,
-      accountId: jixieAccountId || this.config.accountId,
+      accountid: jixieAccountId || this.config.accountid,
     };
 
-    if (this.config.accountId == null) {
+    if (this.config.accountid == null) {
       throw new Error('Jixie account ID not provided.');
     }
   }
@@ -76,7 +76,7 @@ export class JixieAnalyticService {
   }
 
   public pushTag(item: object): Promise<void> {
-    item = { accountId: this.config.accountId, ...item };
+    item = { accountid: this.config.accountid, ...item };
 
     return new Promise<void>((resolve, reject) => {
       if (!this.isLoaded) {
@@ -107,7 +107,7 @@ export class JixieAnalyticService {
       url +
       Object.keys(this.config)
         .filter((k) => this.config[k])
-        .map((k) => `${k.toLowerCase()}=${this.config[k]}`)
+        .map((k) => `${k}=${this.config[k]}`)
         .join('&')
     );
   }

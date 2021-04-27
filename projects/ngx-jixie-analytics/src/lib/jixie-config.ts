@@ -1,3 +1,3 @@
 export interface IJixieConfig {
-  accountId: string;
+  accountid: string;
 }

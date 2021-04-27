@@ -31,7 +31,7 @@ import {
 imports: [
     ...
     NgxJixieAnalyticsModule.forRoot({
-      accountId: YOUR_ACCOUNT_ID,
+      accountid: YOUR_ACCOUNT_ID,
     })
 ]
 ```
@@ -49,6 +49,7 @@ then you can start pushing events on your jixie:
 
 ```typescript
 const jixieTag = {
+  // accountid automatically added when `pushTag`.
   email: user.email ?
     this.analyticService.hash(user.email) : '',
   action: "viewitem",
